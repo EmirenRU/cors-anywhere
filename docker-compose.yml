@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  cors-anywhere:
+    container_name: cors-anywhere 
+    ports:  
+      - "13130:8080"
+    build: 
+      context: .
+      dockerfile: dockerfile
+    restart: always    
